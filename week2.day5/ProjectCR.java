@@ -82,7 +82,7 @@ public class ProjectCR {
 		//			    compare > if(condition)
 		List<WebElement> listElements = driver.findElementsByClassName("product-brand");
 		for (WebElement each : listElements) {
-			if(!(each.getText()).contains("MANGO")) {
+			if(each.getText().contains("MANGO")) {
 				System.out.println(each.getText());
 				System.out.println("Its Mango");
 			}
